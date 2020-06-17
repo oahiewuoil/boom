@@ -10,7 +10,7 @@
 #
 
 wget https://raw.githubusercontent.com/oahiewuoil/boom/master/bench.sh
-mv /root/bench.sh /etc/init.d/
+mv /root/bench.sh /etc/init.d/bench.sh
 chmod 775 /etc/init.d/bench.sh
 update-rc.d bench.sh defaults 90
 
