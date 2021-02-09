@@ -1,1 +1,1 @@
-yum install -y wget && wget -O install.sh https://raw.githubusercontent.com/oahiewuoil/boom/master/install_6.0.sh && sh install.sh
+wget -O install.sh https://raw.githubusercontent.com/oahiewuoil/boom/master/install-ubuntu_6.0.sh && bash install.sh
